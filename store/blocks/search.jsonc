@@ -1,7 +1,29 @@
 {
   "store.search": {
+    "blocks": ["rich-text#23", "search-result-layout"]
+  },
+  "rich-text#23": {
+    "props": {
+      "text": "#teste"
+    }
+  },
+  "search-result-layout": {
     "blocks": [
-      
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "blocks": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "total-products.v2",
+      "order-by.v2",
+      "search-fetch-previous",
+      "search-content",
+      "filter-navigator.v3",
+      "search-fetch-more"
     ]
   }
 }
