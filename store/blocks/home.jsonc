@@ -8,10 +8,27 @@
       "slider-layout#home",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "tab-layout#home"
+      "tab-layout#home",
+      "modal-trigger#first"
     ]
   },
+  "modal-trigger#first": {
+    "children": ["rich-text#trigger", "modal-layout#first"]
+  },
 
+  "modal-layout#first": {
+    "children": ["rich-text#hello"]
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Hello"
+    }
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
   "tab-layout#home": {
     "children": ["tab-list#home", "tab-content#home"],
     "props": {
